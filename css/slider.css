@@ -1,0 +1,152 @@
+
+
+
+.images {
+    width: 200px;
+    height: 300px;
+    position: relative;
+    border-radius: 10px 0px 10px 0px;
+    overflow: hidden;
+    display: block;
+}
+
+.slider {
+    width: 200px;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 10px 0px 10px 0px;
+    overflow: hidden;
+}
+.img1 {
+    width: 200px;
+    height: 300px;
+    background: url(../image/cover/alexandra-dadario1.jpg);
+    background-size: cover;
+    border-radius: 10px 0px 10px 0px;
+    overflow: hidden;
+}
+.img2 {
+    width: 200px;
+    height: 300px;
+    background: url(../image/cover/alexandra-daddario2.jpg);
+    background-size: cover;
+    border-radius: 10px 0px 10px 0px;
+    overflow: hidden;
+}
+.img3 {
+    width: 200px;
+    height: 300px;
+    background: url(../image/cover/alexandra-daddario.jpg);
+    background-size: cover;
+    border-radius: 10px 0px 10px 0px;
+    overflow: hidden;
+}
+.img4 {
+    width: 200px;
+    height: 300px;
+    background: url(../image/cover/alison-brie.jpg);
+    background-size: cover;
+    border-radius: 10px 0px 10px 0px;
+    overflow: hidden;
+}
+.img5 {
+    width: 200px;
+    height: 300px;
+    background: url(../image/cover/alison-brie1.jpg);
+    background-size: cover;
+    border-radius: 10px 0px 10px 0px;
+    overflow: hidden;
+}
+.img6 {
+    width: 200px;
+    height: 300px;
+    background: url(../image/cover/alison-brie2.jpg);
+    background-size: cover;
+    border-radius: 10px 0px 10px 0px;
+    overflow: hidden;
+}
+.img7 {
+    width: 200px;
+    height: 300px;
+    background: url(../image/cover/vanessa-kirby.jpg);
+    background-size: cover;
+    border-radius: 10px 0px 10px 0px;
+    overflow: hidden;
+}
+.img8 {
+    width: 200px;
+    height: 300px;
+    background: url(../image/cover/dakota-fanning.jpg);
+    background-size: cover;
+    border-radius: 10px 0px 10px 0px;
+    overflow: hidden;
+}
+.img9 {
+    width: 200px;
+    height: 300px;
+    background: url(../image/cover/cobie-smulder1.jpg);
+    background-size: cover;
+    border-radius: 10px 0px 10px 0px;
+    overflow: hidden;
+}
+.img10 {
+    width: 200px;
+    height: 300px;
+    background: url(../image/cover/barbara-palvin4.jpg);
+    background-size: cover;
+    border-radius: 10px 0px 10px 0px;
+    overflow: hidden;
+}
+.img11 {
+    width: 200px;
+    height: 300px;
+    background: url(../image/cover/barbara-palvin2.jpg);
+    background-size: cover;
+    border-radius: 10px 0px 10px 0px;
+    overflow: hidden;
+}
+.img12 {
+    width: 200px;
+    height: 300px;
+    background: url(../image/cover/barbara-palvin.jpg);
+    background-size: cover;
+    border-radius: 10px 0px 10px 0px;
+    overflow: hidden;
+}
+
+
+/*txt*/
+.images .box {
+    
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.images .box .txt {
+    height: 300px;
+    width: 200px;
+    position: relative;
+    overflow: hidden;
+}
+.images .box .txt h1 {
+    color: hotpink;
+    position: absolute;
+    top: 170px;
+    left: 10px;
+    margin: 0 auto;
+}
+.images .box .txt .pin {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: hotpink;
+    bottom: -35px;
+    left: 65px;
+}
+
+
+
+

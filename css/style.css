@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+
+}
+@font-face {
+    font-family: 'Anton', sans-serif;
+    src: url(../fonts/Anton-Regular.ttf);
+}
+@font-face {
+    font-family: 'Archivo Black', sans-serif;
+    src: url(../fonts/ArchivoBlack-Regular.ttf);
+}
+@font-face {
+    font-family: 'Bebas Neue', cursive;
+    src: url(../fonts/BebasNeue-Regular.ttf);
+}
+@font-face {
+    font-family: 'Jost', sans-serif;
+    src: url(../fonts/Jost-Italic-VariableFont_wght.ttf);
+}
+body {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(224, 224, 224);
+    
+    /* background: linear-gradient(90deg, #833ab4, #fd1d1d, #fcb045); */
+    background: url(../image/bg.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+
+
+}
+
+
+.overlay {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(26, 23, 23, 0.61);
+    position: fixed;
+    z-index: 0;
+}
+.menu {
+    width: 100%;
+    height: 60px;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+.menu .celeb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.menu .celeb p {
+    font-family: Arial, Helvetica, sans-serif;
+    
+    font-size: 10px;
+    text-transform: uppercase;
+}
+.menu .celeb .pin {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #00b4d8;
+    margin: 10px;
+}
+
+.container {
+    /* width: 100%; */
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    flex-direction: row;
+    transform: translate(0 -50%);
+    /* margin-left: 90px;
+    margin-right: 90px; */
+}
+
+.box {
+    width: 200px;
+    height: 300px;
+    background-color: cornsilk;
+    z-index: 1;
+    position: relative;
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+    margin-top: 50px;
+    margin-left: 15px;
+    margin-right: 15px;
+    border-radius: 10px 0px 10px 0px;
+    -webkit-box-shadow: 0px 0px 11px 3px rgba(0,0,0,0.52); 
+    box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.52);
+    transition: all linear 0.4s .04s;
+    overflow: visible;
+    
+}
+.box .pro {
+    width: 70px;
+    height: 70px;    
+    background-color: #00b4d8;
+    border-radius: 50%;
+    position: absolute;
+    top: -35px;
+    left: 65px;
+    z-index: 5;
+    opacity: 0;
+    visibility: hidden;
+    transition: all linear 1s;
+    background-size: cover;
+    -webkit-box-shadow: 0px 0px 3px 2px rgba(0,0,0,0.52); 
+    box-shadow: 0px 0px 3px 2px rgba(0, 0, 0, 0.26);
+}
+.box:hover .pro {
+    opacity: 1;
+    visibility: visible;
+}
+.box .shape {
+    width: 200px;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+.box .shape .hov {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    z-index: 3;
+    bottom: -100%;
+    transition: all .4s;
+    visibility: hidden;
+    border-radius: 10px 0px 10px 0px;
+    overflow: hidden;
+}
+.box .hov .card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    
+    /* overflow: visible; */
+}
+.box .hov .card .txt {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    
+    top: 35px;
+    
+}
+.box .hov .card .pro {
+    
+    /* overflow: visible; */
+}
+.box .hov .card .txt h3 {
+    font-size: 17px;
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+/*    border-bottom: 1px solid #00b4d8;*/
+    overflow: auto;
+}
+.box .hov .card .txt p {                                          
+    font-size: 13px;
+    color: #ffffff;
+    text-transform: capitalize;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 20px;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.box .shape:hover .hov {
+    bottom: 0;
+    visibility: visible;
+    
+}
+.img-layer {
+    position: absolute;
+    width: 200px;
+    height: 300px;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+
+h5 {
+    color: #ffffff;
+    font-size: 15px;
+    text-transform: uppercase;
+    position: absolute;
+    top: 200px;
+    text-align: left;
+    font-family: 'Archivo Black', sans-serif;
+    left: 20px;
+    text-shadow: 2px 2px 2px 2px black;
+    visibility: visible;
+    line-height: 15px;
+    border-bottom: 3px solid yellow;
+}
+
+.box .img .c-type {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    visibility: visible;
+    position: absolute;
+    bottom: -35px;
+    left: 65px;
+}
+.box .img .celeb {
+    background: #00b4d8;
+}
+.box .img .post {
+    background: url(../image/HOTPINK.png);
+    background-position-x: center;
+    background-position-y: center;
+}
+.box .img .a-model {
+    background: url(../image/VIOLET.png);
+    background-position-x: center;
+    background-position-y: center;
+}
+.box:hover .img .c-type {
+    visibility: hidden;
+}
+.box:hover .img h5 {
+    visibility: hidden;
+}
+
+.footer {
+    width: 100%;
+    height: 70px;
+    background: rgba(255, 0, 0, 0);
+
+    
+}
